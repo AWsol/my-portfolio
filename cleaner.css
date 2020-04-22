@@ -1,0 +1,191 @@
+.master {
+    margin: auto;
+    margin-top: 75px;
+    max-width: 1000px;
+    table-layout: fixed;
+    border: 1px solid white;
+    text-align: center;
+    display: block;
+}
+
+::-moz-selection {
+    color: white;
+    background: black;
+}
+::selection {
+    color: white;
+    background: black;
+}
+
+.aboutme-content {
+    margin: 0 auto;
+    max-width: 1000px;
+    font-family: Verdana,sans-serif;
+    font-size: 13px;
+    line-height: normal;
+    display: block;
+}
+.aboutme-content > img {
+    float: left;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.mail-container {
+    font-family: Verdana,sans-serif;
+    font-size: 13px;
+}
+
+* {
+    box-sizing: border-box;
+}  
+
+/* Add a white background color to the top navigation bar */
+.topnav {
+    background-color: white;
+    overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+    float: right;
+}
+/* Change the color of links on hover */
+.topnav-right a:hover {
+    color: white;
+}
+.topnav-right a:hover:not(.active) {
+    background-color: rgb(70, 70, 70);
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: black;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', serif;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Projects.html flex-container ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+div.poker-container,
+div.longboard-container,
+div.lift-container {
+    margin: 10px;
+}
+div.poker-container,
+.poker-container > img,
+div.longboard-container,
+.longboard-container > img,
+div.lift-container,
+.lift-container > img {
+    position: relative;
+    max-width: 300px;
+    height: 450px;
+    border-style: none;
+    text-align: center;
+    border-radius: 5px;
+    float: left;
+
+    transition: transform 0.4s;
+    overflow: hidden;
+}
+
+.poker-container > img:hover,
+.longboard-container > img:hover,
+.lift-container > img:hover {
+    /*transform: scale(1.3);
+    transform-origin: 50% 50%;*/
+    overflow: hidden;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+div.poker-text,
+div.longboard-text,
+div.lift-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 260px;
+    height: 80px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    opacity: 0.85;
+    transition: height 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+div.poker-text:hover,
+div.longboard-text:hover,
+div.lift-text:hover {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 260px;
+    height: 410px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    opacity: 0.85;
+}
+div.poker-text > h3,
+div.longboard-text > h3,
+div.lift-text > h3 {
+    visibility: visible;
+    opacity: 1;
+}
+div.poker-text > p,
+div.longboard-text > p,
+div.lift-text > p {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.40s ease-in-out, opacity 1.25s ease-in-out;
+}
+div.poker-text:hover > p,
+div.longboard-text:hover > p,
+div.lift-text:hover > p {
+    visibility: visible;
+    opacity: 1;
+}
+.button {
+    padding: 5px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: white; 
+    color: black; 
+    border: 2px solid green;
+    transition: opacity 0.5s ease-in-out;
+}
+.button1:hover {
+    background-color: rgb(47, 212, 47);
+    color: black;
+    border: 2px solid green;
+    opacity: 1;
+}
